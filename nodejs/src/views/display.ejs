@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display is running</title>
+</head>
+
+
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    .btn-edit {
+        background-color: red;
+
+    }
+</style>
+
+<body>
+    display is running
+
+    <table style="width:100%">
+        <tr>
+            <th>firstName</th>
+            <th>lastname</th>
+            <th>email</th>
+            <th>setting</th>
+        </tr>
+
+
+        <% for(var i=0; i < datatable.length; i++) { %>
+            <tr>
+                <td>
+                    <%= datatable[i].firstName %>
+                </td>
+                <td>
+                    <%= datatable[i].lastName %>
+                </td>
+                <td>
+                    <%= datatable[i].email %>
+                </td>
+                <td>
+                    <a href="/edit-crud?id=<%=datatable[i].id %>" class="btn-edit" type="button">edit</a>
+                    <a href="/delete-crud?id=<%=datatable[i].id %>" class="btn-delete" type="button">delete</a>
+                </td>
+            </tr>
+            <% } %>
+
+    </table>
+</body>
+
+</html>

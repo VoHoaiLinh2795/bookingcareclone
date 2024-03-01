@@ -1,0 +1,108 @@
+html {
+    font-size: 100%;
+}
+
+.fa-bars {
+
+    font-size: 35px;
+
+
+
+}
+
+.fa-bars:hover {
+    background-color: red;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px;
+    background-color: rgba(237, 255, 250, 1.00);
+    border-radius: 10px;
+}
+
+fa-bars:hover {
+    background-color: red;
+}
+
+.active,
+.pending {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 43px;
+    font-size: 18px;
+
+}
+
+.active {
+
+    background-color: rgb(255, 196, 25);
+    border-radius: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+.pending {
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+.Logo-header {
+    padding: 20px;
+    background: url('../../../public/communityIcon_4g1uo0kd87c61.png') center center no-repeat;
+    background-size: cover;
+    background-position: left;
+    margin-left: -100px;
+}
+
+.between-items {
+    display: flex;
+    padding: 20px;
+    font-size: 24px;
+    justify-content: space-evenly;
+
+    width: 450px;
+}
+
+.righr-items {
+
+    display: flex;
+    justify-content: center;
+    background-position: right;
+    margin-right: 20px;
+    width: 200px;
+
+
+    .schedule {
+
+        .schedule-icon {
+            padding: 20px;
+            background: url('../../../public/history.svg') center center no-repeat;
+            background-size: auto;
+            background-position: left;
+            margin-left: 20px;
+
+        }
+
+
+    }
+
+    .support {
+        margin-left: 50px;
+
+        .support-icon {
+            background: url('../../../public/support_agent.svg')center center no-repeat;
+            padding: 20px;
+            background-size: auto;
+            margin-left: 10px;
+        }
+    }
+}
